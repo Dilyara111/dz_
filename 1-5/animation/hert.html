@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <style>
+        #train {
+            position: relative;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+
+<img id="train" src="https://thumbs.gfycat.com/CourteousPastCat-max-1mb.gif" width="150" height="150">
+
+<script>
+    train.onclick = function() {
+        animate({
+            duration: 1000,
+            timing: function(timeFraction) {
+                return Math.pow(timeFraction, 4);
+            },
+            draw: function(progress) {
+                train.style.top = progress * 500 + 'px';
+            }
+        });
+    }
+    function animate(options) {
+
+        var start = performance.now();
+        requestAnimationFrame(function animate(time) {
+            // timeFraction от 0 до 1
+            var timeFraction = (time - start) / options.duration;
+            if (timeFraction > 1) timeFraction = 1;
+
+            // текущее состояние анимации
+            var progress = options.timing(timeFraction)
+            options.draw(progress);
+            if (timeFraction < 1) {
+                requestAnimationFrame(animate);
+            }
+        });
+    }
+
+</script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title> Эмилия Кларк</title>
+</head>
+<body>
+    <div>
+        <header class="site-header">
+            <h1>Эмилия Кларк</h1>
+        </header>
+
+        <section class="site-header">
+            <h1>Эмилия Кларк</h1>
+            <img src="https://www.kino-teatr.ru/news/10198/99957.jpg" width="250" height="300
+">
+            <h2>Биография</h2>
+            <ul class="skills-list">
+                <li><a href="one.html"> 1. Ранние годы и образование</a> </li>
+                <li><a href=""> 2. Карьера</a> </li>
+                <li><a href=""> 3. Личная жизнь</a> </li>
+                <li><a href=""> 4. Фильмография</a> </li>
+                <li><a href=""> 5. Роли в театре</a> </li>
+                <li><a href=""> 6. Награды и номинации</a> </li>
+                <li><a href=""> 7. Примечания</a> </li>
+                <li><a href=""> 8. Ссылки</a> </li>
+            </ul>
+        </section>
+    </div>
+    <div>
+        <header class="container">
+            <h2> Интересные факты </h2>
+        </header>
+    </div>
+</body>
+</html>
+
